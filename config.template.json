@@ -1,0 +1,14 @@
+{
+  "log": { "level": "warn" },
+  "inbounds": [
+    {
+      "type": "vless",
+      "tag": "in",
+      "listen": "::",
+      "listen_port": __PORT__,
+      "users": [ { "uuid": "03f0b79a-ccd3-44b6-a6c8-20be4f26eb11" } ],
+      "transport": { "type": "ws", "path": "/app" }
+    }
+  ],
+  "outbounds": [ { "type": "direct", "tag": "direct" } ]
+}
